@@ -1,0 +1,31 @@
+
+.card{
+    width : 90%;
+    height: 60%;
+    margin: 2%;
+    margin-right: 0%;
+    padding: 5%;
+    text-align: center;
+    border-radius: 40px;
+}
+.card .card-image img{
+    height: 30%;
+    width: 60%;
+    margin-left: 22%;
+}
+
+span.badge{
+    color: white;
+    width: 5px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin-top: 20%;
+}
+
+#country{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    margin-top: 15%;
+}

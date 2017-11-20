@@ -1,0 +1,25 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(0, 41, 77, 0.66);
+}
+   
+.btn{
+    margin: 7px;
+    background-color: #00284d;
+    border-color: #00284d;
+}
+
+.btn:hover{
+    background-color: #00549E;
+    border-color: #00549E;
+}
+
+nav{
+    background-color: white;
+   
+}
+#logo{
+    height: 64px;
+    position: absolute;
+    margin-left: 46%
+}

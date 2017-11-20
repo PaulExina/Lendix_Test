@@ -1,0 +1,51 @@
+    <div class="card">
+        <div class="card-title">
+            <h5>{{proj.name}}</h5>
+        </div>
+       
+       <div class="row">
+              <div class="col s2 offset-s1">
+                  <p>{{proj.rate}}% </p>
+              </div>
+              <div class="col s3 offset-s1">
+                  <p>{{proj.loanDuration}} months</p>
+              </div>
+              <div class="col s2">
+                    {{#if (eq proj.grade "A")}}
+                        <span class="badge green darken-3">{{proj.grade}}</span>
+                    {{else if (eq proj.grade "B")}}
+                        <span class="badge green">{{proj.grade}}</span>
+                    {{else if (eq proj.grade "C")}}
+                        <span class="badge yellow darken-2">{{proj.grade}}</span>
+                    {{else if (eq proj.grade "D")}}
+                        <span class="badge orange  darken-2">{{proj.grade}}</span>
+                    {{else if (eq proj.grade "E")}}
+                        <span class="badge red darken-2">{{proj.grade}}</span>    
+                    {{/if}}    
+              </div>
+              <div class="col s2">
+                  
+                    <img id="country" src="/assets/{{proj.business.address.country}}.jpg">
+                
+              </div>
+        </div>      
+        <div class="card-image">
+          <img src="https://cdn.lendix.com/{{proj.illustration.url}}">
+        </div>
+        <div class="card-content">
+            <div class="row">
+                  <p><i class="material-icons">euro_symbol</i>  {{proj.amount}}</p>
+            </div> 
+            <div class="row">
+                  <p><i class="material-icons">location_on</i>  {{proj.business.address.city}}</p>
+            </div>
+              <div class="row">
+                  <p><i class="material-icons">work</i> {{proj.activity}}</p>
+              </div>
+        
+        </div> 
+        <div class="card-action">
+            <a class="btn btn-float">learn more</a>
+        </div> 
+      </div>
+{{yield}}
