@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
     model(){
-        let projects = this.store.findAll('project');
-        return projects;
+        //Look for all projects in the store goes to the API if didn't find any
+        return this.store.findAll('project');
     }
 });

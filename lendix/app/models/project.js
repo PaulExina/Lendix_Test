@@ -1,5 +1,6 @@
 import DS from 'ember-data';
 
+//Model definition of project
 export default DS.Model.extend({
     _id: DS.attr('string'),
     status: DS.attr('string'),
