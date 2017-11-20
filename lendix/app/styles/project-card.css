@@ -10,8 +10,11 @@
 }
 .card .card-image img{
     height: 30%;
-    width: 60%;
-    margin-left: 22%;
+    width: 100%;
+}
+
+.card .card-content{
+    padding-bottom: 0px;
 }
 
 span.badge{

@@ -1,16 +1,20 @@
  <nav>
-    <div class="nav-wrapper">
-        <img id="logo" src="/assets/logo.png">
-    </div>
-  </nav>
-<div class="row">
-    {{#each model as |project|}}
-        <div class="col s4">
-            {{#project-card proj=project}}
-            {{/project-card}}
+        <div class="nav-wrapper">
+            <img id="logo" src="/assets/logo.png">
         </div>
-    {{/each}}
-</div>
+    </nav>
+
+   
+    <div class="row">
+        {{#each model as |project|}}
+            <div class="col s12 m6 l3">
+                {{#project-card proj=project}}
+                {{/project-card}}
+            </div>
+        {{/each}}
+    </div>
+
+ 
 
 
 {{outlet}}

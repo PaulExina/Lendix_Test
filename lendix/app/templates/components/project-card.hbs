@@ -1,16 +1,16 @@
     <div class="card">
         <div class="card-title">
-            <h5>{{proj.name}}</h5>
+            <h6><strong>{{proj.name}}</strong></h6>
         </div>
        
        <div class="row">
               <div class="col s2 offset-s1">
                   <p>{{proj.rate}}% </p>
               </div>
-              <div class="col s3 offset-s1">
+              <div class="col s3">
                   <p>{{proj.loanDuration}} months</p>
               </div>
-              <div class="col s2">
+              <div class="col s2 offset-s1">
                     {{#if (eq proj.grade "A")}}
                         <span class="badge green darken-3">{{proj.grade}}</span>
                     {{else if (eq proj.grade "B")}}

@@ -4,7 +4,7 @@ body{
 }
    
 .btn{
-    margin: 7px;
+    margin: 5px;
     background-color: #00284d;
     border-color: #00284d;
 }
@@ -16,10 +16,8 @@ body{
 
 nav{
     background-color: white;
-   
+    text-align: center;
 }
 #logo{
     height: 64px;
-    position: absolute;
-    margin-left: 46%
 }
